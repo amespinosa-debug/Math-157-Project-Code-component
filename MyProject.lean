@@ -1,15 +1,6 @@
 import MyProject.Basic
 import Mathlib.Tactic.Lemma
 
-/- My goal was to formalize the Handshaking Lemma and its proof using lists and induction rather than
-Mathlib's graph functions. However, I made a few adjustments that don't necessarily adhere to the proof of
-the Handshaking Lemma, but I believe demonstrates a very similar path. To find the total degree of a graph,
-I base my function on edges rather than vertices. I believe this offers a valid representation. However, this
-does result in the lack of use for my V (vertices) list. Furthermore, I assume a simple and undirected graph for
-simplicity, since I was having a hard time with the self-loops. -/
-/- Note: I did use ChatGPT to help create an outline of what structures, functions, and lemmas needed to
-build up the Handshaking Lemma. -/
-
 -- I define a graph as a structure with two fields: V (vertices) and E (edges).
 structure aGraph where
     V : List Nat
